@@ -31,13 +31,13 @@ animate();
 function animate() {
     requestAnimationFrame(animate);
 
-    earth.rotation.y-=0.002;
-    clouds.rotation.y-=0.005;
-    moon.rotation.y+=0.01;
-    mercury.rotation.y+=0.007;
-    pivotPoint.rotation.y+=0.007;
-    stars.rotation.y+=0.003;
-    sky_sphere.rotation.y-=0.002;
+    earth.rotation.y-=0.0002;
+    clouds.rotation.y-=0.0005;
+    moon.rotation.y+=0.001;
+    mercury.rotation.y+=0.0007;
+    pivotPoint.rotation.y+=0.0007;
+    stars.rotation.y+=0.0003;
+    sky_sphere.rotation.y-=0.0002;
 
     controls.update();
     renderer.render( scene, camera );
